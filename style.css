@@ -217,6 +217,13 @@ body {
 /* =================== Queries =================== */
 
 @media (min-width:767px) {
+    main {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        width: 100vh;
+        gap: 30px;
+    }
     body {
         background-image: url(images/bg-desktop.png);
         background-size: contain;
