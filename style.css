@@ -13,6 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background-size: cover;
     font-size: 14px;
     /* padding: 3rem; */
     background-image: url(images/bg-mobile.png);
@@ -196,6 +197,10 @@ body {
     margin-left: 1rem;
 }
 
+.for-desktop-progress {
+    display: none;
+}
+
 
 /* =================== Footer =================== */
 
@@ -211,7 +216,7 @@ body {
 
 /* =================== Queries =================== */
 
-@media (min-width:375px) {
+@media (min-width:767px) {
     body {
         background-image: url(images/bg-desktop.png);
         background-size: contain;
