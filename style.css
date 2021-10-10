@@ -1,0 +1,281 @@
+/* =================== Normailaization =================== */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Raleway";
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 14px;
+    /* padding: 3rem; */
+    background-image: url(images/bg-mobile.png);
+    background-color: var(--Dark-Blue);
+    background-repeat: no-repeat;
+}
+
+
+/* =================== Vars =================== */
+
+:root {
+    --Gradient: #ffa399 to #ff4d97;
+    --Pale-Blue: hsl(243, 100%, 93%);
+    --Grayish-Blue: hsl(229, 7%, 55%);
+    --Dark-Blue: hsl(228, 56%, 26%);
+    --Very-Dark-Blue: hsl(229, 57%, 11%);
+}
+
+
+/* =================== Styling =================== */
+
+
+/* =================== Fylo Section =================== */
+
+.top-container {
+    width: 325px;
+}
+
+.top-container .logo {
+    width: 144px;
+    height: 48px;
+    margin-bottom: 2.2rem;
+}
+
+.top-container .container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Dark-Blue);
+    padding: 2.8rem;
+    border-radius: 10px 100px 10px 10px;
+    -webkit-border-radius: 10px 100px 10px 10px;
+    -moz-border-radius: 10px 100px 10px 10px;
+    -ms-border-radius: 10px 100px 10px 10px;
+    -o-border-radius: 10px 100px 10px 10px;
+}
+
+.ico-container {
+    display: flex;
+    gap: 15px;
+}
+
+.top-container .container .icon {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    padding: 0.85rem;
+    background-color: var(--Very-Dark-Blue);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+/* =================== usage section =================== */
+
+.usage {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    width: 326px;
+    height: 160px;
+    color: var(--Pale-Blue);
+    font-weight: 400;
+    margin-top: 1rem;
+    padding: 2rem 2rem;
+    background-color: var(--Dark-Blue);
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.used {
+    font-weight: 700;
+}
+
+.progressbg {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: var(--Very-Dark-Blue);
+    height: 20px;
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.progressbg::before {
+    position: absolute;
+    content: "0 GB";
+    bottom: -2rem;
+    left: 0;
+    font-weight: 700;
+}
+
+.progressbg::after {
+    position: absolute;
+    content: "1000 GB";
+    bottom: -2rem;
+    right: 0;
+    font-weight: 700;
+}
+
+.inprog-span {
+    display: flex;
+    align-items: center;
+    height: 14px;
+    width: 81.5%;
+    background: rgb(255, 163, 153);
+    background: linear-gradient(90deg, rgba(255, 163, 153, 1) 0%, rgba(255, 77, 151, 1) 100%);
+    left: 3px;
+    position: relative;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.inprog-span::after {
+    display: block;
+    position: absolute;
+    content: "";
+    right: 3px;
+    background-color: #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.usage-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    position: absolute;
+    color: var(--Very-Dark-Blue);
+    font-weight: 700;
+    font-size: 2rem;
+    bottom: -50%;
+    transform: translateY(-50%);
+    background-color: white;
+    width: 180px;
+    height: 73px;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.usage-footer span {
+    font-size: 1rem;
+    color: var(--Grayish-Blue);
+    margin-left: 1rem;
+}
+
+
+/* =================== Footer =================== */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+/* =================== Queries =================== */
+
+@media (min-width:375px) {
+    body {
+        background-image: url(images/bg-desktop.png);
+        background-size: contain;
+        background-position-y: bottom;
+        background-position-x: right;
+        background-color: var(--Very-Dark-Blue);
+        flex-direction: row;
+        gap: 30px;
+        position: relative;
+    }
+    .top-container {
+        position: relative;
+        top: -23px;
+    }
+    .usage {
+        width: 540px;
+        flex-direction: column;
+        text-align: left;
+    }
+    .usage-footer {
+        display: none;
+    }
+    .for-desktop-progress {
+        top: -.8rem;
+        right: 40px;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        position: absolute;
+        color: var(--Very-Dark-Blue);
+        font-weight: 700;
+        font-size: 2rem;
+        bottom: -50%;
+        transform: translateY(-50%);
+        background-color: white;
+        width: 180px;
+        height: 73px;
+        border-radius: 9px;
+        -webkit-border-radius: 9px;
+        -moz-border-radius: 9px;
+        -ms-border-radius: 9px;
+        -o-border-radius: 9px;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+    }
+    .for-desktop-progress span {
+        font-size: 1rem;
+        color: var(--Grayish-Blue);
+        margin-left: 1rem;
+    }
+    .for-desktop-progress::before {
+        position: absolute;
+        content: "";
+        bottom: -40px;
+        z-index: -1;
+        right: 0;
+        display: block;
+        border: 40px solid;
+        width: 1px;
+        height: 1px;
+        border-color: transparent #fff transparent transparent;
+    }
+}
